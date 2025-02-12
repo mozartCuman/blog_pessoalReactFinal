@@ -3,21 +3,20 @@ import { ReactNode, useContext } from 'react'
 import { AuthContext } from '../../contexts/AuthContext'
 
 function Footer() {
-
     let data = new Date().getFullYear()
 
     const { usuario } = useContext(AuthContext)
 
     let component: ReactNode
 
-    if (usuario.token !== "") {
+    if (usuario.token !== " ") {
 
         component = (
 
-            <div className="flex justify-center bg-indigo-900 text-white">
+            <div className=" bg-indigo-900 text-white flex justify-center">
                 <div className="container flex flex-col items-center py-4">
                     <p className='text-xl font-bold'>
-                        Blog Pessoal Generation | Copyright: {data}
+                        Blog Pessoal Cuman | Copyright: {data}
                     </p>
                     <p className='text-lg'>Acesse nossas redes sociais</p>
                     <div className='flex gap-2'>
